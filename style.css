@@ -1,0 +1,29 @@
+.topBar {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    background-color: #96a4f1;
+    padding: 3%;
+    height: auto;
+    border: white;
+}
+
+.leftBar {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    background-color: #96a4f1;
+    padding: 3%;
+    height: auto;
+    border: white;
+}
+
+.cardsContaioner {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 3%;
+    height: auto;
+    border: white;
+}
