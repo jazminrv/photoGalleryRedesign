@@ -27,3 +27,8 @@
     height: auto;
     border: white;
 }
+
+.card {
+    max-width: 19%;
+    /* padding: 1%; */
+}
