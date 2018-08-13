@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,69 +9,546 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-    crossorigin="anonymous">
+        crossorigin="anonymous">
 
-    <!-- Style sheet -->  
+    <!-- Style sheet -->
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div class="container">
-        <div class="row topBar">
-            <!-- <div class="col-12 rowBackground"> -->
-                <div class="col-1 ">
-                    <p>Logo</p>
+    <!-- <div class="container"> -->
+     <!-- Header -->
+    <div class="row" id="topBar" style="z-index: 1000 !important;">
+        <!-- Plangrid Logo & Project Title -->
+        <div class="col-6">  <!-- <div class="col-12 rowBackground"> -->
+            <div class="container"> 
+                <!-- Plangrid logo & Home Page -->
+                <a href="#home"><img src="images/plangridLogo.png" alt="Plangrid Logo" height="38" width="38"></a>
+                <!-- Project dropdown -->
+                <div class="dropdown show" role="group" aria-label="Button group with nested dropdown">
+                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background-color: white; color: black;">Project 3 - This is my title</button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Project 1</a>
+                        <a class="dropdown-item" href="#">Project 2</a>
+                        <a class="dropdown-item" href="#">Project 3 - This is my title</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">View all Projects</a>
+                    </div>
                 </div>
-                <div class="col-4 ">
-                    <p> My Project Name</p>
+            </div>
+        </div>
+        <!-- Message Support -->
+        <div class="col-2 help-support">
+            <nav class="nav nav-pills nav-justified">
+                <a class="nav-item nav-link " href="#" >Message Support</a>
+            </nav>
+        </div>
+        <!-- Help Center -->
+        <div class="col-2 help-support">
+            <nav class="nav nav-pills nav-justified">
+                <a class="nav-item nav-link " href="#">Help Center</a>
+            </nav>
+        </div>
+        <!-- User Name & Settings -->
+        <div class="col-2 ">
+            <div class="dropdown show" role="group" aria-label="Button group with nested dropdown">
+                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background-color: white; color: black;">Jazmin Valencia</button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Account Settings</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Log out</a>
+                    </div>
                 </div>
-                <div class="col-3 ">
-                    <p> </p>
-                </div>
-                <div class="col-2 ">
-                    <p> Help Center</p>
-                </div>
-                <div class="col-2 ">
-                    <p> User Name</p>
+        </div><!-- </div> -->
+    </div>
+
+    <div class="row justify-content-end main-body">
+        <!-- <div class="jaz col-lg-1 col-md-1 col-sm-1 leftBar list-group list-group-flush"> -->
+        <!-- <div class="leftBar jaz col-1"> -->
+        <div class="leftBar left-menu-icons  col-lg-1 col-md-12 col-sm-12">
+            <!-- Left menu options -->
+            <div class="nav flex-column nav-pills " id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                <a class="nav-link " id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="false"><img src="images/icons/homeGrey-Icon.png" alt="Plangrid Logo"><span>Home</span></a>
+                
+                <a class="nav-link" id="v-pills-sheets-tab" data-toggle="pill" href="#v-pills-sheets" role="tab" aria-controls="v-pills-profile" aria-selected="false"><img src="images/icons/sheetsGray-Icon.png" alt="Plangrid Logo"><span>Sheets</span></a>
+                <a class="nav-link" id="v-pills-issues-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-issues" aria-selected="false"><img src="images/icons/issuesGrey-Icon.png" alt="Plangrid Logo"><span>Issues</span></a>
+
+                <a class="nav-link" id="v-pills-rfi-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-rfi" aria-selected="false"><img src="images/icons/rfiGrey-Icon.png" alt="Plangrid Logo"><span>RFI's</span></a>
+
+                <a class="nav-link" id="v-pills-reports-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-reports" aria-selected="false"><img src="images/icons/fieldReportsGreay-Icon.png" alt="Field Reports"><span>Reports</span></a>
+
+                <a class="nav-link" id="v-pills-documents-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-documents" aria-selected="false"><img src="images/icons/attachmentsGrey-Icon.png" alt="Documents"><span>Files</span></a>
+
+                <a class="nav-link active" id="v-pills-photos-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-photos" aria-selected="true"><img src="images/icons/photoWhite-Icon.png" alt="Photos"><span style="font-size: 12px; color: #ffffff;">Photos</span></a>
+
+                <a class="nav-link" id="v-pills-submittals-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-submittals" aria-selected="false"><img src="images/icons/submittalsGrey-Icon.png" alt="Submittals"><span>Submittals</span></a>
+
+                <a class="nav-link" id="v-pills-team-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-team" aria-selected="false"><img src="images/icons/teamGrey-Icon.png" alt="Team"><span>Team</span></a>
+
+                <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false"><img src="images/icons/settingsGrey-Icon.png" alt="Team"><span>Settings</span></a>
+            </div>
+        </div>
+        <div class="col-lg-11">
+            <!-- <div class="container "> -->
+                <div class="row">
+                    <div class="col-12">
+                        <!-- Navigation bar & Search -->
+                        <nav> 
+                            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                <!-- Navigation options: Photos & Snapshots -->
+                                <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home"
+                                    aria-selected="true">Photos</a>
+                                <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile"
+                                    aria-selected="false">Snapshots</a>
+                                <!-- Search -->
+                                <form class="form-inline my-2 my-lg-0 align-self-end">
+                                    <div class="input-group mb-1">
+                                        <div class="input-group mb-1" style="margin-bottom: none">
+                                            <input type="text" class="form-control" placeholder="Search" aria-label="Recipient's username" aria-describedby="button-addon2">
+                                            <div class="input-group-append">
+                                                <button class="btn btn-outline-secondary " type="button" id="button-addon2"> <img src="images/icons/searchGrey-Icon.png" alt="Search" height="23" width="23"></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form> 
+                            </div>
+                        </nav>
+                        <!-- Buttons: Grid & List view, Delete,Filter, Sort by, Share  -->
+                        <nav class="navbar navbar-expand-lg panel-options row">
+                            <!-- List and Grid view options -->
+                            <div class="nav-item  align-self-start"> <!--col-md-4  -->
+                                <nav class="navbar navbar-expand-lg navbar-light align-self-start">
+                                    <form action="#" class="form-inline myButtonView">
+                                        <!-- Grid View -->
+                                        <button class="nav-link gridview btn btn-outline-primary" href="#">
+                                            <img src="images/icons/gridViewBlue-Icon.png" alt="Grid View" height="22" width="22">
+                                        </button>
+                                        <!-- List View -->
+                                        <button class="nav-link listview btn btn-outline-secondary" href="#">
+                                            <img src="images/icons/listViewGray-Icon.png" alt="List View" height="22" width="22">
+                                        </button>
+                                    </form>
+                                </nav>
+                            </div>
+                            <div class="nav-item col align-self-end">
+                            <!-- Work on this division -->
+                            <div class=" btn-toolbar nav-item col-md-6 col-lg-4 col-sm-2 align-self-end" role="toolbar" aria-label="Toolbar with button groups"> <!--</div> -->
+                                <!-- Colapse buttons into button ...  -->
+                                <nav class="navbar navbar-expand-lg navbar-light align-self-end">
+                                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                    aria-expanded="false" aria-label="Toggle navigation"><span>...</span></button>
+                                    <!-- Buttons -->
+                                    <div class="collapse navbar-collapse mybutton-group" id="navbarSupportedContent">
+                                        <div class="mr-2" role="group" aria-label="First group" id="collapse-buttons">
+                                            <ul class="navbar-nav mr-auto">
+                                                <!-- Delete button -->
+                                                <li class="nav-item">
+                                                    <a  href="#" class="btn btn-secondary btn-lg disabled" tabindex="-1" role="button" aria-disabled="true" style="  background-color:white; color: gray; font-size: 14px; height: 38px;"><img src="images/icons/trashCanGrey-Icon.png" alt="Delete Selected Photo(s)" height="18px" width="18px;"><span style="margin-left: 7px;">Delete</span></a> 
+                                                </li>
+                                                <!-- Filter Button -->
+                                                <li class="nav-item">
+                                                    <button type="button nav-link btn-lg active" class="nav-link btn btn-outline-secondary align-self-end" style="color: #175FA1; height: 38px; font-size: 14px" href="#"><img src="images/icons/filterBlue-Icon.png" alt="Filter Photos" height="20" width="20"><span style="margin-left: 10px; margin-right: 5px;">Flter</span></button>
+                                                </li>
+                                                <!-- Sort by button -->
+                                                <li class="nav-item">
+                                                    <button type="button nav-link btn-lg active" class="nav-link btn btn-outline-secondary align-self-end" style="color: #175FA1; height: 38px; font-size: 14px" href="#"><img src="images/icons/sortByBlue-Icon.png" alt="Sort by" height="20" width="20"><span style="margin-left: 10px; margin-right: 5px;">Sort by</span></button>
+                                                </li>
+                                                <!-- Share button -->
+                                                <li class="nav-item">
+                                                    <button type="button nav-link btn-lg active" class="nav-link btn btn-outline-secondary align-self-end" style="color: #175FA1; height: 38px; font-size: 14px" href="#"><img src="images/icons/shareBlue-Icon.png" alt="Share Photos" height="20" width="20"><span style="margin-left: 10px; margin-right: 5px;">Share</span></button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </nav>
+                            </div>
+                        </nav>         
+                        <div class="tab-content" id="nav-tabContent">
+                            <!-- Photos Tab -->
+                            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab"> 
+                                <!-- <div class=" col-md-2 my-1 mx-1 col-sm-1"> -->
+                                <div class=" col-lg-12 col-md-12 col-sm-12 ">
+                                <!-- CARD 1 -->
+                                <div class="card" >
+                                    <!-- Hover over Icons on Card -->
+                                    <div class="hover-menu mycontainer">
+                                        <!-- Delete image -->
+                                        <a href="#sheet"><img src="images/icons/trashCanWhite-Icon.png" alt="Delete image" height="25px" width="25px" style="margin: 5px 75px 3px 5px; "></a>
+                                        <!-- Markup  -->
+                                        <a href="#sheet"><img src="images/icons/photoBlue-Icon.png" alt="Markup type" height="25px" width="25px" style="margin: 5px 5px;"></a>
+                                        <!-- Download image -->
+                                        <a href="#sheet"><img src="images/icons/downloadWhite-Icon.png" alt="Download image" height="25px" width="25px" style="margin: 5px 5px;"></a>
+                                        <!-- Chexkbox - Select image -->
+                                        <input type="checkbox">          
+                                    </div>
+                                    <!-- Card contnet -->
+                                    <img class="card-img-top"src="images/imageTest1.jpeg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <span> <p class="" style="margin-bottom: 5px;">This is my photo title</p></span>
+                                        <span> <p class="" style="margin-bottom:5px;"></p><a href="#sheet" style="margin: 0px;">A1.21A-P1</a></p></span>
+                                        <span><p class="" style="margin-bottom:3px;">Jazmin Rodriguez-Valencia</p></span>
+                                        <span><p class="timeStamp"style="margin-bottom:3px;" >Jul 3, 2018 4:55pm</p></span>
+                                    </div>
+                                </div>
+                                <!-- CARD 2 -->
+                                <div class="card" >
+                                    <!-- Hover over Icons on Card -->
+                                    <div class="hover-menu mycontainer">
+                                        <!-- Delete image -->
+                                        <a href="#sheet"><img src="images/icons/trashCanWhite-Icon.png" alt="Delete image" height="25px" width="25px" style="margin: 5px 75px 3px 5px; "></a>
+                                        <!-- Markup  -->
+                                        <a href="#sheet"><img src="images/icons/photoBlue-Icon.png" alt="Markup type" height="25px" width="25px" style="margin: 5px 5px;"></a>
+                                        <!-- Download image -->
+                                        <a href="#sheet"><img src="images/icons/downloadWhite-Icon.png" alt="Download image" height="25px" width="25px" style="margin: 5px 5px;"></a>
+                                        <!-- Chexkbox - Select image -->
+                                        <input type="checkbox">          
+                                    </div>
+                                    <!-- Card contnet -->
+                                    <img class="card-img-top"src="images/imageTest1.jpeg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <span> <p class="" style="margin-bottom: 5px;">This is my photo title</p></span>
+                                        <span> <p class="" style="margin-bottom:5px;"></p><a href="#sheet" style="margin: 0px;">A1.21A-P1</a></p></span>
+                                        <span><p class="" style="margin-bottom:3px;">Jazmin Rodriguez-Valencia</p></span>
+                                        <span><p class="timeStamp"style="margin-bottom:3px;" >Jul 3, 2018 4:55pm</p></span>
+                                    </div>
+                                </div>   
+                                <!-- CARD 3 -->
+                                <div class="card" >
+                                    <!-- Hover over Icons on Card -->
+                                    <div class="hover-menu mycontainer">
+                                        <!-- Delete image -->
+                                        <a href="#sheet"><img src="images/icons/trashCanWhite-Icon.png" alt="Delete image" height="25px" width="25px" style="margin: 5px 75px 3px 5px; "></a>
+                                        <!-- Markup  -->
+                                        <a href="#sheet"><img src="images/icons/photoBlue-Icon.png" alt="Markup type" height="25px" width="25px" style="margin: 5px 5px;"></a>
+                                        <!-- Download image -->
+                                        <a href="#sheet"><img src="images/icons/downloadWhite-Icon.png" alt="Download image" height="25px" width="25px" style="margin: 5px 5px;"></a>
+                                        <!-- Chexkbox - Select image -->
+                                        <input type="checkbox">          
+                                    </div>
+                                    <!-- Card contnet -->
+                                    <img class="card-img-top"src="images/imageTest1.jpeg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <span> <p class="" style="margin-bottom: 5px;">This is my photo title</p></span>
+                                        <span> <p class="" style="margin-bottom:5px;"></p><a href="#sheet" style="margin: 0px;">A1.21A-P1</a></p></span>
+                                        <span><p class="" style="margin-bottom:3px;">Jazmin Rodriguez-Valencia</p></span>
+                                        <span><p class="timeStamp"style="margin-bottom:3px;" >Jul 3, 2018 4:55pm</p></span>
+                                    </div>
+                                </div>  
+                                <!-- CARD 4 -->
+                                <div class="card" >
+                                    <!-- Hover over Icons on Card -->
+                                    <div class="hover-menu mycontainer">
+                                        <!-- Delete image -->
+                                        <a href="#sheet"><img src="images/icons/trashCanWhite-Icon.png" alt="Delete image" height="25px" width="25px" style="margin: 5px 75px 3px 5px; "></a>
+                                        <!-- Markup  -->
+                                        <a href="#sheet"><img src="images/icons/photoBlue-Icon.png" alt="Markup type" height="25px" width="25px" style="margin: 5px 5px;"></a>
+                                        <!-- Download image -->
+                                        <a href="#sheet"><img src="images/icons/downloadWhite-Icon.png" alt="Download image" height="25px" width="25px" style="margin: 5px 5px;"></a>
+                                        <!-- Chexkbox - Select image -->
+                                        <input type="checkbox">          
+                                    </div>
+                                    <!-- Card contnet -->
+                                    <img class="card-img-top"src="images/imageTest1.jpeg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <span> <p class="" style="margin-bottom: 5px;">This is my photo title</p></span>
+                                        <span> <p class="" style="margin-bottom:5px;"></p><a href="#sheet" style="margin: 0px;">A1.21A-P1</a></p></span>
+                                        <span><p class="" style="margin-bottom:3px;">Jazmin Rodriguez-Valencia</p></span>
+                                        <span><p class="timeStamp"style="margin-bottom:3px;" >Jul 3, 2018 4:55pm</p></span>
+                                    </div>
+                                </div>  
+                                <!-- CARD 5 -->
+                                <div class="card" >
+                                    <!-- Hover over Icons on Card -->
+                                    <div class="hover-menu mycontainer">
+                                        <!-- Delete image -->
+                                        <a href="#sheet"><img src="images/icons/trashCanWhite-Icon.png" alt="Delete image" height="25px" width="25px" style="margin: 5px 75px 3px 5px; "></a>
+                                        <!-- Markup  -->
+                                        <a href="#sheet"><img src="images/icons/photoBlue-Icon.png" alt="Markup type" height="25px" width="25px" style="margin: 5px 5px;"></a>
+                                        <!-- Download image -->
+                                        <a href="#sheet"><img src="images/icons/downloadWhite-Icon.png" alt="Download image" height="25px" width="25px" style="margin: 5px 5px;"></a>
+                                        <!-- Chexkbox - Select image -->
+                                        <input type="checkbox">          
+                                    </div>
+                                    <!-- Card contnet -->
+                                    <img class="card-img-top"src="images/imageTest1.jpeg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <span> <p class="" style="margin-bottom: 5px;">This is my photo title</p></span>
+                                        <span> <p class="" style="margin-bottom:5px;"></p><a href="#sheet" style="margin: 0px;">A1.21A-P1</a></p></span>
+                                        <span><p class="" style="margin-bottom:3px;">Jazmin Rodriguez-Valencia</p></span>
+                                        <span><p class="timeStamp"style="margin-bottom:3px;" >Jul 3, 2018 4:55pm</p></span>
+                                    </div>
+                                </div>  
+                                <!-- CARD 6 -->
+                                <div class="card" >
+                                    <!-- Hover over Icons on Card -->
+                                    <div class="hover-menu mycontainer">
+                                        <!-- Delete image -->
+                                        <a href="#sheet"><img src="images/icons/trashCanWhite-Icon.png" alt="Delete image" height="25px" width="25px" style="margin: 5px 75px 3px 5px; "></a>
+                                        <!-- Markup  -->
+                                        <a href="#sheet"><img src="images/icons/photoBlue-Icon.png" alt="Markup type" height="25px" width="25px" style="margin: 5px 5px;"></a>
+                                        <!-- Download image -->
+                                        <a href="#sheet"><img src="images/icons/downloadWhite-Icon.png" alt="Download image" height="25px" width="25px" style="margin: 5px 5px;"></a>
+                                        <!-- Chexkbox - Select image -->
+                                        <input type="checkbox">          
+                                    </div>
+                                    <!-- Card contnet -->
+                                    <img class="card-img-top"src="images/imageTest1.jpeg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <span> <p class="" style="margin-bottom: 5px;">This is my photo title</p></span>
+                                        <span> <p class="" style="margin-bottom:5px;"></p><a href="#sheet" style="margin: 0px;">A1.21A-P1</a></p></span>
+                                        <span><p class="" style="margin-bottom:3px;">Jazmin Rodriguez-Valencia</p></span>
+                                        <span><p class="timeStamp"style="margin-bottom:3px;" >Jul 3, 2018 4:55pm</p></span>
+                                    </div>
+                                </div>   
+                                <!-- CARD 7 -->
+                                <div class="card" >
+                                    <!-- Hover over Icons on Card -->
+                                    <div class="hover-menu mycontainer">
+                                        <!-- Delete image -->
+                                        <a href="#sheet"><img src="images/icons/trashCanWhite-Icon.png" alt="Delete image" height="25px" width="25px" style="margin: 5px 75px 3px 5px; "></a>
+                                        <!-- Markup  -->
+                                        <a href="#sheet"><img src="images/icons/photoBlue-Icon.png" alt="Markup type" height="25px" width="25px" style="margin: 5px 5px;"></a>
+                                        <!-- Download image -->
+                                        <a href="#sheet"><img src="images/icons/downloadWhite-Icon.png" alt="Download image" height="25px" width="25px" style="margin: 5px 5px;"></a>
+                                        <!-- Chexkbox - Select image -->
+                                        <input type="checkbox">          
+                                    </div>
+                                    <!-- Card contnet -->
+                                    <img class="card-img-top"src="images/imageTest1.jpeg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <span> <p class="" style="margin-bottom: 5px;">This is my photo title</p></span>
+                                        <span> <p class="" style="margin-bottom:5px;"></p><a href="#sheet" style="margin: 0px;">A1.21A-P1</a></p></span>
+                                        <span><p class="" style="margin-bottom:3px;">Jazmin Rodriguez-Valencia</p></span>
+                                        <span><p class="timeStamp"style="margin-bottom:3px;" >Jul 3, 2018 4:55pm</p></span>
+                                    </div>
+                                </div> 
+                                <!-- CARD 8 -->
+                                <div class="card" >
+                                    <!-- Hover over Icons on Card -->
+                                    <div class="hover-menu mycontainer">
+                                        <!-- Delete image -->
+                                        <a href="#sheet"><img src="images/icons/trashCanWhite-Icon.png" alt="Delete image" height="25px" width="25px" style="margin: 5px 75px 3px 5px; "></a>
+                                        <!-- Markup  -->
+                                        <a href="#sheet"><img src="images/icons/photoBlue-Icon.png" alt="Markup type" height="25px" width="25px" style="margin: 5px 5px;"></a>
+                                        <!-- Download image -->
+                                        <a href="#sheet"><img src="images/icons/downloadWhite-Icon.png" alt="Download image" height="25px" width="25px" style="margin: 5px 5px;"></a>
+                                        <!-- Chexkbox - Select image -->
+                                        <input type="checkbox">          
+                                    </div>
+                                    <!-- Card contnet -->
+                                    <img class="card-img-top"src="images/imageTest1.jpeg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <span> <p class="" style="margin-bottom: 5px;">This is my photo title</p></span>
+                                        <span> <p class="" style="margin-bottom:5px;"></p><a href="#sheet" style="margin: 0px;">A1.21A-P1</a></p></span>
+                                        <span><p class="" style="margin-bottom:3px;">Jazmin Rodriguez-Valencia</p></span>
+                                        <span><p class="timeStamp"style="margin-bottom:3px;" >Jul 3, 2018 4:55pm</p></span>
+                                    </div>
+                                </div> 
+                                 <!-- CARD 9 -->
+                                 <div class="card" >
+                                    <!-- Hover over Icons on Card -->
+                                    <div class="hover-menu mycontainer">
+                                        <!-- Delete image -->
+                                        <a href="#sheet"><img src="images/icons/trashCanWhite-Icon.png" alt="Delete image" height="25px" width="25px" style="margin: 5px 75px 3px 5px; "></a>
+                                        <!-- Markup  -->
+                                        <a href="#sheet"><img src="images/icons/photoBlue-Icon.png" alt="Markup type" height="25px" width="25px" style="margin: 5px 5px;"></a>
+                                        <!-- Download image -->
+                                        <a href="#sheet"><img src="images/icons/downloadWhite-Icon.png" alt="Download image" height="25px" width="25px" style="margin: 5px 5px;"></a>
+                                        <!-- Chexkbox - Select image -->
+                                        <input type="checkbox">          
+                                    </div>
+                                    <!-- Card contnet -->
+                                    <img class="card-img-top"src="images/imageTest1.jpeg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <span> <p class="" style="margin-bottom: 5px;">This is my photo title</p></span>
+                                        <span> <p class="" style="margin-bottom:5px;"></p><a href="#sheet" style="margin: 0px;">A1.21A-P1</a></p></span>
+                                        <span><p class="" style="margin-bottom:3px;">Jazmin Rodriguez-Valencia</p></span>
+                                        <span><p class="timeStamp"style="margin-bottom:3px;" >Jul 3, 2018 4:55pm</p></span>
+                                    </div>
+                                </div> 
+                                 <!-- CARD 10 -->
+                                 <div class="card" >
+                                    <!-- Hover over Icons on Card -->
+                                    <div class="hover-menu mycontainer">
+                                        <!-- Delete image -->
+                                        <a href="#sheet"><img src="images/icons/trashCanWhite-Icon.png" alt="Delete image" height="25px" width="25px" style="margin: 5px 75px 3px 5px; "></a>
+                                        <!-- Markup  -->
+                                        <a href="#sheet"><img src="images/icons/photoBlue-Icon.png" alt="Markup type" height="25px" width="25px" style="margin: 5px 5px;"></a>
+                                        <!-- Download image -->
+                                        <a href="#sheet"><img src="images/icons/downloadWhite-Icon.png" alt="Download image" height="25px" width="25px" style="margin: 5px 5px;"></a>
+                                        <!-- Chexkbox - Select image -->
+                                        <input type="checkbox">          
+                                    </div>
+                                    <!-- Card contnet -->
+                                    <img class="card-img-top"src="images/imageTest1.jpeg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <span> <p class="" style="margin-bottom: 5px;">This is my photo title</p></span>
+                                        <span> <p class="" style="margin-bottom:5px;"></p><a href="#sheet" style="margin: 0px;">A1.21A-P1</a></p></span>
+                                        <span><p class="" style="margin-bottom:3px;">Jazmin Rodriguez-Valencia</p></span>
+                                        <span><p class="timeStamp"style="margin-bottom:3px;" >Jul 3, 2018 4:55pm</p></span>
+                                    </div>
+                                </div> 
+                                <!-- CARD 11 -->
+                                <div class="card" >
+                                    <!-- Hover over Icons on Card -->
+                                    <div class="hover-menu mycontainer">
+                                        <!-- Delete image -->
+                                        <a href="#sheet"><img src="images/icons/trashCanWhite-Icon.png" alt="Delete image" height="25px" width="25px" style="margin: 5px 75px 3px 5px; "></a>
+                                        <!-- Markup  -->
+                                        <a href="#sheet"><img src="images/icons/photoBlue-Icon.png" alt="Markup type" height="25px" width="25px" style="margin: 5px 5px;"></a>
+                                        <!-- Download image -->
+                                        <a href="#sheet"><img src="images/icons/downloadWhite-Icon.png" alt="Download image" height="25px" width="25px" style="margin: 5px 5px;"></a>
+                                        <!-- Chexkbox - Select image -->
+                                        <input type="checkbox">          
+                                    </div>
+                                    <!-- Card contnet -->
+                                    <img class="card-img-top"src="images/imageTest1.jpeg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <span> <p class="" style="margin-bottom: 5px;">This is my photo title</p></span>
+                                        <span> <p class="" style="margin-bottom:5px;"></p><a href="#sheet" style="margin: 0px;">A1.21A-P1</a></p></span>
+                                        <span><p class="" style="margin-bottom:3px;">Jazmin Rodriguez-Valencia</p></span>
+                                        <span><p class="timeStamp"style="margin-bottom:3px;" >Jul 3, 2018 4:55pm</p></span>
+                                    </div>
+                                </div> 
+                                <!-- CARD 12 -->
+                                <div class="card" >
+                                    <!-- Hover over Icons on Card -->
+                                    <div class="hover-menu mycontainer">
+                                        <!-- Delete image -->
+                                        <a href="#sheet"><img src="images/icons/trashCanWhite-Icon.png" alt="Delete image" height="25px" width="25px" style="margin: 5px 75px 3px 5px; "></a>
+                                        <!-- Markup  -->
+                                        <a href="#sheet"><img src="images/icons/photoBlue-Icon.png" alt="Markup type" height="25px" width="25px" style="margin: 5px 5px;"></a>
+                                        <!-- Download image -->
+                                        <a href="#sheet"><img src="images/icons/downloadWhite-Icon.png" alt="Download image" height="25px" width="25px" style="margin: 5px 5px;"></a>
+                                        <!-- Chexkbox - Select image -->
+                                        <input type="checkbox">          
+                                    </div>
+                                    <!-- Card contnet -->
+                                    <img class="card-img-top"src="images/imageTest1.jpeg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <span> <p class="" style="margin-bottom: 5px;">This is my photo title</p></span>
+                                        <span> <p class="" style="margin-bottom:5px;"></p><a href="#sheet" style="margin: 0px;">A1.21A-P1</a></p></span>
+                                        <span><p class="" style="margin-bottom:3px;">Jazmin Rodriguez-Valencia</p></span>
+                                        <span><p class="timeStamp"style="margin-bottom:3px;" >Jul 3, 2018 4:55pm</p></span>
+                                    </div>
+                                </div> 
+                                <!-- CARD 13 -->
+                                <div class="card" >
+                                    <!-- Hover over Icons on Card -->
+                                    <div class="hover-menu mycontainer">
+                                        <!-- Delete image -->
+                                        <a href="#sheet"><img src="images/icons/trashCanWhite-Icon.png" alt="Delete image" height="25px" width="25px" style="margin: 5px 75px 3px 5px; "></a>
+                                        <!-- Markup  -->
+                                        <a href="#sheet"><img src="images/icons/photoBlue-Icon.png" alt="Markup type" height="25px" width="25px" style="margin: 5px 5px;"></a>
+                                        <!-- Download image -->
+                                        <a href="#sheet"><img src="images/icons/downloadWhite-Icon.png" alt="Download image" height="25px" width="25px" style="margin: 5px 5px;"></a>
+                                        <!-- Chexkbox - Select image -->
+                                        <input type="checkbox">          
+                                    </div>
+                                    <!-- Card contnet -->
+                                    <img class="card-img-top"src="images/imageTest1.jpeg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <span> <p class="" style="margin-bottom: 5px;">This is my photo title</p></span>
+                                        <span> <p class="" style="margin-bottom:5px;"></p><a href="#sheet" style="margin: 0px;">A1.21A-P1</a></p></span>
+                                        <span><p class="" style="margin-bottom:3px;">Jazmin Rodriguez-Valencia</p></span>
+                                        <span><p class="timeStamp"style="margin-bottom:3px;" >Jul 3, 2018 4:55pm</p></span>
+                                    </div>
+                                </div>
+                                <!-- CARD 14 -->
+                                <div class="card" >
+                                    <!-- Hover over Icons on Card -->
+                                    <div class="hover-menu mycontainer">
+                                        <!-- Delete image -->
+                                        <a href="#sheet"><img src="images/icons/trashCanWhite-Icon.png" alt="Delete image" height="25px" width="25px" style="margin: 5px 75px 3px 5px; "></a>
+                                        <!-- Markup  -->
+                                        <a href="#sheet"><img src="images/icons/photoBlue-Icon.png" alt="Markup type" height="25px" width="25px" style="margin: 5px 5px;"></a>
+                                        <!-- Download image -->
+                                        <a href="#sheet"><img src="images/icons/downloadWhite-Icon.png" alt="Download image" height="25px" width="25px" style="margin: 5px 5px;"></a>
+                                        <!-- Chexkbox - Select image -->
+                                        <input type="checkbox">          
+                                    </div>
+                                    <!-- Card contnet -->
+                                    <img class="card-img-top"src="images/imageTest1.jpeg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <span> <p class="" style="margin-bottom: 5px;">This is my photo title</p></span>
+                                        <span> <p class="" style="margin-bottom:5px;"></p><a href="#sheet" style="margin: 0px;">A1.21A-P1</a></p></span>
+                                        <span><p class="" style="margin-bottom:3px;">Jazmin Rodriguez-Valencia</p></span>
+                                        <span><p class="timeStamp"style="margin-bottom:3px;" >Jul 3, 2018 4:55pm</p></span>
+                                    </div>
+                                </div>
+                                <!-- CARD 15 -->
+                                <div class="card" >
+                                    <!-- Hover over Icons on Card -->
+                                    <div class="hover-menu mycontainer">
+                                        <!-- Delete image -->
+                                        <a href="#sheet"><img src="images/icons/trashCanWhite-Icon.png" alt="Delete image" height="25px" width="25px" style="margin: 5px 75px 3px 5px; "></a>
+                                        <!-- Markup  -->
+                                        <a href="#sheet"><img src="images/icons/photoBlue-Icon.png" alt="Markup type" height="25px" width="25px" style="margin: 5px 5px;"></a>
+                                        <!-- Download image -->
+                                        <a href="#sheet"><img src="images/icons/downloadWhite-Icon.png" alt="Download image" height="25px" width="25px" style="margin: 5px 5px;"></a>
+                                        <!-- Chexkbox - Select image -->
+                                        <input type="checkbox">          
+                                    </div>
+                                    <!-- Card contnet -->
+                                    <img class="card-img-top"src="images/imageTest1.jpeg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <span> <p class="" style="margin-bottom: 5px;">This is my photo title</p></span>
+                                        <span> <p class="" style="margin-bottom:5px;"></p><a href="#sheet" style="margin: 0px;">A1.21A-P1</a></p></span>
+                                        <span><p class="" style="margin-bottom:3px;">Jazmin Rodriguez-Valencia</p></span>
+                                        <span><p class="timeStamp"style="margin-bottom:3px;" >Jul 3, 2018 4:55pm</p></span>
+                                    </div>
+                                </div>
+                                <!-- CARD 16 -->
+                                <div class="card" >
+                                <!-- Hover over Icons on Card -->
+                                <div class="hover-menu mycontainer">
+                                    <!-- Delete image -->
+                                    <a href="#sheet"><img src="images/icons/trashCanWhite-Icon.png" alt="Delete image" height="25px" width="25px" style="margin: 5px 75px 3px 5px; "></a>
+                                    <!-- Markup  -->
+                                    <a href="#sheet"><img src="images/icons/photoBlue-Icon.png" alt="Markup type" height="25px" width="25px" style="margin: 5px 5px;"></a>
+                                    <!-- Download image -->
+                                    <a href="#sheet"><img src="images/icons/downloadWhite-Icon.png" alt="Download image" height="25px" width="25px" style="margin: 5px 5px;"></a>
+                                    <!-- Chexkbox - Select image -->
+                                    <input type="checkbox">          
+                                </div>
+                                <!-- Card contnet -->
+                                <img class="card-img-top"src="images/imageTest1.jpeg" alt="Card image cap">
+                                <div class="card-body">
+                                    <span> <p class="" style="margin-bottom: 5px;">This is my photo title</p></span>
+                                    <span> <p class="" style="margin-bottom:5px;"></p><a href="#sheet" style="margin: 0px;">A1.21A-P1</a></p></span>
+                                    <span><p class="" style="margin-bottom:3px;">Jazmin Rodriguez-Valencia</p></span>
+                                    <span><p class="timeStamp"style="margin-bottom:3px;" >Jul 3, 2018 4:55pm</p></span>
+                                </div>
+                                </div>
+                                </div>
+                            </div>
+
+
+                            <!-- Snaphsots tab -->
+                            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                <p>These are the Snapshots</p>
+                                <!-- CARD -->
+                                
+                                <!-- CARD -->
+                            </div>
+                        </div>
+                    </div>
                 </div>
             <!-- </div> -->
         </div>
+    </div>   
+    <!-- </div> -->
+    <!-- </div> -->
 
-        <div class="row">
-            <div class="col-2 leftBar">
-                <a href="#home">Home</a>
-                <a href="#sheets">Sheets</a>
-                <a href="#issues">Issues</a>
-                <a href="#rfis">RFIs</a>
-                <a href="#fieldReports">Field Reports</a>
-                <a href="#documents">Documents</a>
-                <a href="#photos">Photos</a>
-                <a href="#submittals">Submitals</a>
-                <a href="#team">Team</a>
-                <a href="#Settings">Settings</a>
-            </div>
-            <div class="col-10 cardsContaioner">
-                <div class="container">
-                    <div class="card">
-                        <img class="card-img-top img-responsive" src="images/imageTest1.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <h4 class="card-title">Project 1</h4>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Read More</a>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img class="card-img-top img-responsive" src="images/buttonStates.png" alt="Card image cap">
-                        <div class="card-body">
-                            <h4 class="card-title">Project 1</h4>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Read More</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        
-        </div>
-    </div>
-    
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="./app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

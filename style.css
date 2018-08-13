@@ -1,34 +1,303 @@
-.topBar {
-    position: relative;
-    overflow: hidden;
+#topBar {
+    position: sticky;
     width: 100%;
-    background-color: #96a4f1;
-    padding: 3%;
+    /* background-color: #1F323D; */
+    background-color: #ffffff;
+    padding: 1%;
     height: auto;
     border: white;
+    z-index: 100;
 }
 
 .leftBar {
     position: relative;
-    overflow: hidden;
+    display: block;
+    /* overflow: hidden; */
     width: 100%;
-    background-color: #96a4f1;
-    padding: 3%;
+    width: 250px;
+    /* display: flex; */
+    background-color: #1F323D;
+    padding: 0px;
     height: auto;
-    border: white;
+    /* border: white; */
+    /* color: #8595A1; */
+    /* z-index: 5; */
+}
+/* Project & User dropwon */
+.dropdown-item {
+    font-size: 14px;
+    border: none;
+}
+.dropdown-item:hover {
+    display: block;
+    background-color: #175FA1;
+    color: white;
+}
+.dropdown-toggle {
+    font-size: 14px;
 }
 
-.cardsContaioner {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    background-color: #ffffff;
-    padding: 3%;
-    height: auto;
-    border: white;
+/* .main-body {
+    position: absolute;
+    z-index: 5;
+} */
+
+
+/* #home-tab a {
+    background-color: aqua;
+} */
+/* .card-img-top {
+    min-width: 170px;
+} */
+
+/* .myButtonView{
+    width: 40px;
+    display: block;
+} */
+.gridview  {
+    display: block;
+    /* display: inline-block;  */
+    /* border: 1px;  */
+    border-radius: 0px;
+    width: 60px;
+    background-color: rgb(229, 242, 253);
 }
+.gridview:hover{
+    background-color:rgb(229, 242, 253);
+    border: .5px solid #175FA1;
+    box-shadow: 0 6px 8px 0  rgb(229, 242, 253), 0 5px 5px 0  rgb(229, 242, 253);
+}
+.listview  {
+    display: block;
+    /* display: inline-block;  */
+    /* border: 1px;  */
+    border-radius: 0px;
+    width: 60px;
+}
+
+.listview:hover{
+    background-color: rgb(229, 242, 253);
+    border: .5px solid #175FA1;
+    box-shadow: 3px 3px 3px 3px  rgb(229, 242, 253);
+}
+
+
+.mybutton-group button{
+    display: block;
+    /* display: inline-block;  */
+    /* border: 1px;  */
+    border-radius: 0px;
+    /* width: 100px; */
+    background-color: white;
+    border-radius: 0px;   
+    border-color: #175FA1;
+
+}
+
+.mybutton-group  button:hover{
+    background-color: rgb(229, 242, 253);
+    border: .5px solid #175FA1;
+    box-shadow: 3px 3px 3px 3px rgb(222, 238, 253);
+}
+
+/* .project-menu {
+    position: sticky;
+    z-index: 10;
+} */
+
+/* .project-menu-container {
+    display: flex;
+    z-index: 20;
+} */
+
+.help-support a {
+    font-size: 14px;
+    color: #000000;
+}
+.help-support a:hover {
+    /* background-color: #175FA1; */
+    background-color: none;
+    color:  #175FA1;
+    font-size: 15px;
+}
+
+.left-menu-icons img {
+    height: 23px;
+    width: 23px;
+    margin-right: 5px;
+    margin-left: 7px;
+    /* margin-top: 10px; */
+}
+
+.left-menu-icons span {
+    /* margin-left: 3px; */
+    color: #8595A1;
+    font-size: 12px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: lighter;
+    margin-left: 2px;
+}
+.left-menu-icons span:hover {
+    /* margin-left: 3px; */
+    color: #ffffff;
+    font-size: 13px;
+
+}
+
+
+
+.container {
+    display: flex;
+}
+  /* .content {
+    position: absolute;
+    top: 0;
+    background-image: url("https://goo.gl/images/ko16a7");
+    background-color: transparent;
+    z-index: 5;
+  } */
 
 .card {
-    max-width: 19%;
-    /* padding: 1%; */
+    position: relative;
+    overflow: auto;
+    /* display: block; */
+    /* max-width: 19%; */
+    float: left;
+    border: 1px solid #175FA1;
+    height: 275px;
+    width: 225px;
+    padding: 0px;
+    margin: 5px;
 }
+.card-img-top{
+    width: 225;
+    height: 150px;
+    /* width="225px" height="150px */
+}
+.card-body{
+    font-size: 12px;
+    padding: 10px;
+}
+.timeStamp{
+    font-size: 10px;
+}
+
+.hover-menu {
+    position: absolute;
+    top: -5;
+    height: 50px;
+    width: 225px;
+    border-top: none;
+    /* background-color: rgba(0,0,0,.3); */
+    background-color: rgb(5, 5, 5);
+    opacity: .5;
+    transition: all .3s;
+    transform: translate(0, -5px);
+    border-radius: 3px 3px 0px 0px;
+    z-index: 50;
+  }
+  
+  .hover-menu:hover {
+    opacity: .8;
+    transform: translate(0px, 0px);
+  }
+  
+  /* .content-image {
+    height: 200px;
+    width: 214px;
+    background-image: fixed;
+    background: url(https://images.pexels.com/photos/104827/cat-pet-animal-domestic-104827.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+    background-repeat: no-repeat;
+    background-size: contain;
+  } */
+/* 
+  .mycontainer{
+    max-width: 225px;
+  } */
+
+
+.input[type=checkbox] {
+    /* zoom: 2.1;
+    margin: 7px 2px 0px 3px;
+    padding: 0px;
+    z-index: 50; */
+    zoom: 4;
+    margin: 3px 5px; 
+    padding: 10px; 
+    transform: scale(2);
+    border-radius: 0px;
+}
+.nav-item a{
+    display: block;
+    /* display: inline-block;  */
+    /* border: 1px;  */
+    /* width: 100px; */
+    background-color: white;
+    border-radius: 0px;   
+    border-color: #175FA1;
+}
+
+.jaz a{
+    background-color: #1F323D;
+    margin-left: 5px 1px 5px 15px;
+    width: 140px;
+    border-radius: 0px;
+ 
+}
+
+.nav-justified{
+    text-align: left;
+}
+.jaz a{
+    font-size: 12px;
+    color: #8595A1;
+    /* margin: 5px  5px; */
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* text-align: left; */
+    text-overflow: ellipsis;
+    /* display: inline-block; */
+    /* position: relative; */
+    /* overflow: hidden; */
+    
+}
+.nav-item a:hover{
+    /* background-color: #0085de; */
+    background-color: none;
+    /* color:  #175FA1; */
+    color: #ffffff;    
+}
+.nav-item a:active{
+    background-color: #0085de;
+    /* background-color: none; */
+    /* color:  #175FA1; */
+    color: #ffffff;    
+}
+
+/* .mina nav-link{
+    padding: 15px 5px 5px 15px;
+    display: inline-block;
+    position: relative;
+    color: #8595A1;
+    top: -40px;
+    left: 40px;
+    font-size: 9.5pt;
+    max-width: 95px;
+    max-height: 34px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    vertical-align: middle;
+} */
+
+/* .side-nav .navigation li .label {
+    display: inline-block;
+    position: relative;
+    color: #8595A1;
+    top: -40px;
+    left: 40px;
+    font-size: 9.5pt;
+    max-width: 95px;
+    max-height: 34px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    vertical-align: middle;
+} */
