@@ -99,6 +99,17 @@
     border: .5px solid #175FA1;
     box-shadow: 3px 3px 3px 3px rgb(222, 238, 253);
 }
+.search button:hover{
+    background-color: rgb(229, 242, 253);
+    border: .5px solid #175FA1;
+    box-shadow: 3px 3px 3px 3px  rgb(229, 242, 253);
+}
+.search input:hover{
+border-color: #175FA1;
+}
+.search button{
+    border-color: rgb(218, 219, 221);
+}
 
 /* .project-menu {
     position: sticky;
@@ -228,13 +239,15 @@
     border-radius: 0px;
 }
 .nav-item a{
-    display: block;
+    /* display: block; */
     /* display: inline-block;  */
     /* border: 1px;  */
     /* width: 100px; */
-    background-color: white;
+
+
+    /* background-color: white;
     border-radius: 0px;   
-    border-color: #175FA1;
+    border-color: #175FA1; */
 }
 
 .jaz a{
@@ -245,9 +258,9 @@
  
 }
 
-.nav-justified{
+/* .nav-justified{
     text-align: left;
-}
+} */
 .jaz a{
     font-size: 12px;
     color: #8595A1;
